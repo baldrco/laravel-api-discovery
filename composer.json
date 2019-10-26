@@ -1,6 +1,7 @@
 {
     "name": "baldrco/laravel-api-discovery",
     "description": "Discovery service for Laravel APIs",
+    "version": "1.0.0",
     "require": {
         "php": "^7.3",
         "illuminate/support": "^5.5|^6",
