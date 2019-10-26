@@ -1,0 +1,22 @@
+{
+    "name": "baldrco/laravel-api-discovery",
+    "description": "Discovery service for Laravel APIs",
+    "require": {
+        "php": "^7.3",
+        "illuminate/support": "^5.5|^6",
+        "symfony/http-foundation": "^3.3|^4",
+        "symfony/http-kernel": "^3.3|^4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Baldr\\APIDiscovery\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Baldr SAS",
+            "email": "hello@baldr.co"
+        }
+    ],
+    "minimum-stability": "dev"
+}
