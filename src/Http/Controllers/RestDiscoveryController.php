@@ -29,6 +29,10 @@ class RestDiscoveryController {
 
             // We process data to return in correct format
             $name = explode('_', $routeName);
+            if(count($name) !== 2){
+                continue;
+            }
+
             $category = $name[0];
             $name = $name[1];
             $uri = $route->uri();
