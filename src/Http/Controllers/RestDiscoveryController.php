@@ -29,12 +29,17 @@ class RestDiscoveryController {
 
             // We process data to return in correct format
             $name = explode('_', $routeName);
-            if(count($name) !== 2){
+            if(count($name) < 2){
                 continue;
             }
-
             $category = $name[0];
-            $name = $name[1];
+            $method = $name[1];
+            if(count($name) > 2){
+                array_shift($name);
+                $method = implode('_', $name);
+            }
+
+            $name = $method;
             $uri = $route->uri();
             $method = implode('|', array_diff($route->methods(), ['HEAD']));
 
